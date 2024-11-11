@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/' do
-  "Hello, World!"
+  "Hello, World Diego Hidalgo!"
 end
 
 set :port, ENV['PORT'] || 4567
