@@ -40,6 +40,30 @@ ruby app.rb
 ```
 This will make the application available at http://localhost:4567.
 
+# Application Setup Guide Important
+
+To run this application, you'll need to ensure certain dependencies are installed, particularly on Windows. Follow the steps below:
+
+### 1. Install MSYS2
+
+If you're on Windows, you need **MSYS2** to install some Ruby gems with native extensions (such as `puma` and `nio4r`).
+
+**Download and install MSYS2** from the [official website](https://www.msys2.org/).
+
+Once MSYS2 and Bundler are installed, run the following commands to set up the application:
+
+1. **Install required gems:**
+```bash
+cd App-Ruby
+bundle install
+```
+2. **Start the application**:
+```bash
+ruby app.rb
+```
+This will make the application available at http://localhost:4567.
+
+
 ## Build and Run with Docker
 
 1. Build the Docker image: Make sure you are in the project directory and then run:
@@ -59,8 +83,12 @@ The image for this project is also available on Docker Hub, allowing you to run 
 
 ```bash
 docker pull jdhidalgo673/app-ruby:latest
+```
+
+```bash
 docker run -p 4567:4567 jdhidalgo673/app-ruby:latest
 ```
+This will make the application available at http://localhost:4567.
 
 ## Deployment to Heroku
 
