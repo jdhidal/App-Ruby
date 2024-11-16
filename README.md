@@ -63,20 +63,6 @@ ruby app.rb
 ```
 This will make the application available at http://localhost:4567.
 
-
-## Build and Run with Docker
-
-1. Build the Docker image: Make sure you are in the project directory and then run:
-```bash
-docker build -t app-ruby .
-```
-
-2. Run the container: Once the image is built, you can run the container:
-```bash
-docker run -p 4567:4567 app-ruby
-```
-This will make the application available at http://localhost:4567.
-
 ## Docker Hub
 
 The image for this project is also available on Docker Hub, allowing you to run it without needing to build it locally. You can get it by running:
